@@ -31,11 +31,11 @@ RUN source /home/django/bin/activate
 RUN pip3 install -r ${WEBAPP_REPO_DIR}/requirements.txt
 
 # migrate any updates in the database
-RUN python manage.py makemigrations
-RUN python manage.py migrate
+RUN python3 manage.py makemigrations
+RUN python3 manage.py migrate
 
 # start the webserver
-RUN python manage.py runserver 0:8080
+RUN python3 manage.py runserver 0:8080
 
 EXPOSE 8080
 
