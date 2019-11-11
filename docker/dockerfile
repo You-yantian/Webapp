@@ -28,7 +28,7 @@ RUN virtualenv django
 RUN source /home/django/bin/activate
 
 # install the required packages
-RUN pip install -r ${WEBAPP_REPO_DIR}/requirements.txt
+RUN pip3 install -r ${WEBAPP_REPO_DIR}/requirements.txt
 
 # migrate any updates in the database
 RUN python manage.py makemigrations
