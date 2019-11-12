@@ -1,0 +1,5 @@
+## ref:https://hub.docker.com/repository/docker/yantian/webapp-ubuntu18
+image:
+  repository: "yantian/webapp-ubuntu18"
+  tag: "v1"
+  pullPolicy: IfNotPresent
